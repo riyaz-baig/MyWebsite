@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3967da;
+    color: white;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.category, .animal, .bird {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.category img, .animal img, .bird img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.category img:hover, .animal img:hover, .bird img:hover {
+    transform: scale(1.05);
+}
+
+.category p, .animal p, .bird p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
